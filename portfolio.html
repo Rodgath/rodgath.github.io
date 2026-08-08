@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rodgath - Portfolio</title>
+    <meta name="description"
+      content="Portfolio of Rodgath - Full Stack & Platform Engineer. WordPress, Go, JavaScript, and commercial software products." />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+    </style>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100 antialiased min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header id="site-header"
+      class="border-b border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm sticky top-0 z-40 transition-transform duration-300 ease-out">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3">
+        <div class="min-w-0">
+          <a href="index.html"
+            class="text-lg sm:text-xl font-bold tracking-tight hover:opacity-80 transition-opacity truncate block">Rodgath</a>
+          <p class="text-gray-500 dark:text-gray-400 text-xs sm:text-sm truncate hidden xs:block sm:block">Full Stack &
+            Platform Engineer</p>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3 text-sm flex-shrink-0">
+          <!-- Text links (optional, can keep or remove) -->
+          <a href="portfolio.html"
+            class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 hidden sm:inline">Portfolio</a>
+          <a href="#"
+            class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 hidden sm:inline">Resume</a>
+
+          <!-- Social icons -->
+          <a href="https://github.com/Rodgath" target="_blank" rel="noopener" aria-label="GitHub"
+            class="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/rodgath" target="_blank" rel="noopener" aria-label="LinkedIn"
+            class="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 11v5" />
+              <path d="M8 8v.01" />
+              <path d="M12 16v-5" />
+              <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+              <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" />
+            </svg>
+          </a>
+
+          <a href="https://x.com/rodgath" target="_blank" rel="noopener" aria-label="X (Twitter)"
+            class="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 4l11.733 16h4.267l-11.733 -16l-4.267 0" />
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+            </svg>
+          </a>
+
+          <!-- Dark mode toggle -->
+          <button id="theme-toggle" type="button" aria-label="Toggle dark mode"
+            class="p-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+            <svg id="icon-sun" class="hidden dark:block w-4 h-4 sm:w-5 sm:h-5 text-amber-400" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                clip-rule="evenodd" />
+            </svg>
+            <svg id="icon-moon" class="block dark:hidden w-4 h-4 sm:w-5 sm:h-5 text-gray-600" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+
+      <!-- Intro -->
+      <div class="mb-10 max-w-2xl">
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-3">Portfolio</h2>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          Selected work across WordPress plugins & themes, Go platform engineering,
+          JavaScript libraries, and commercial products. 17+ years of shipping software.
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="flex flex-wrap gap-2 mb-8" id="filters">
+        <button data-filter="all"
+          class="filter-btn active px-4 py-2 text-sm font-medium rounded-full border border-gray-300 dark:border-gray-600 bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900">
+          All
+        </button>
+        <button data-filter="wordpress"
+          class="filter-btn px-4 py-2 text-sm font-medium rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-200">
+          WordPress
+        </button>
+        <button data-filter="golang"
+          class="filter-btn px-4 py-2 text-sm font-medium rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-200">
+          Go / Platform
+        </button>
+        <button data-filter="javascript"
+          class="filter-btn px-4 py-2 text-sm font-medium rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-200">
+          JavaScript
+        </button>
+        <button data-filter="commercial"
+          class="filter-btn px-4 py-2 text-sm font-medium rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-200">
+          Commercial
+        </button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div id="portfolio-grid" class="relative">
+
+        <!-- WebDilaz -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="golang commercial" data-title="WebDilaz Platform"
+          data-desc="Multi-site software marketplace platform for WordPress themes, plugins, and digital products. Originally built as WordPress Multisite. Later fully migrated to a native Go application (Fiber, MySQL, HTMX, Tailwind, Docker) to improve performance, maintainability, and scalability."
+          data-role="Sole Architect, Developer & Platform Owner"
+          data-tech="Go, Fiber, MySQL, HTMX, Tailwind CSS, Docker, WordPress Multisite, PHP" data-link="#"
+          data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">WebDilaz</span> -->
+            <img src="images/default.png" alt="WebDilaz" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              WebDilaz Platform</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Go Migration • Multi-tenant Marketplace</p>
+          </div>
+        </article>
+
+        <!-- Zoro Slider -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress commercial" data-title="Zoro Slider"
+          data-desc="Full-featured professional visual slider builder for WordPress published on WordPress.org. Includes drag-and-drop editor, layer management, animations, responsive layouts, video backgrounds, advanced transitions, and modular architecture. Sole architect, designer, and developer."
+          data-role="Sole Architect, Designer & Developer" data-tech="WordPress, PHP, JavaScript, SCSS, REST API, AJAX"
+          data-link="https://wordpress.org/plugins/zoro-slider/" data-link-text="View on WordPress.org" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">Zoro Slider</span> -->
+            <img src="images/default.png" alt="Zoro Slider" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Zoro Slider</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">WordPress.org Plugin • Visual Slider Builder</p>
+          </div>
+        </article>
+
+        <!-- Dilaz Panel -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress" data-title="Dilaz Panel"
+          data-desc="Reusable WordPress options panel framework for themes and plugins. Object-oriented architecture with an extensible field system. Built to reduce duplication and enforce consistent settings UI across multiple commercial products."
+          data-role="Sole Architect & Developer" data-tech="WordPress, PHP, OOP, Options API, JavaScript"
+          data-link="https://github.com/Rodgath/dilaz-panel" data-link-text="View on GitHub" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">Dilaz Panel</span> -->
+            <img src="images/default.png" alt="Dilaz Panel" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Dilaz Panel</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">WordPress Options Framework</p>
+          </div>
+        </article>
+
+        <!-- Dilaz Metabox -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress" data-title="Dilaz Metabox"
+          data-desc="Reusable WordPress metabox framework focused on the Metadata API. Enables clean, extensible metaboxes for posts, pages, and custom post types with a consistent developer-friendly API."
+          data-role="Sole Architect & Developer" data-tech="WordPress, PHP, Metadata API, OOP"
+          data-link="https://github.com/Rodgath/dilaz-metabox" data-link-text="View on GitHub" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">Dilaz Metabox</span> -->
+            <img src="images/default.png" alt="Dilaz Metabox" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Dilaz Metabox</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">WordPress Metabox Framework</p>
+          </div>
+        </article>
+
+        <!-- Google One Tap -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress" data-title="Google One Tap Login"
+          data-desc="WordPress authentication plugin integrating Google One Tap and Google OAuth for seamless login and registration. Supports automatic user registration, existing user linking, and secure session management."
+          data-role="Sole Developer"
+          data-tech="WordPress, PHP, JavaScript, Google OAuth, Google Identity Services, REST API"
+          data-link="https://github.com/Rodgath/GOT-WP-Login-Register" data-link-text="View on GitHub" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">Google One Tap</span> -->
+            <img src="images/default.png" alt="Google One Tap" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Google One Tap Login</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">WordPress Authentication Plugin</p>
+          </div>
+        </article>
+
+        <!-- n00b Plugin -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress" data-title="n00b Plugin"
+          data-desc="Professional WordPress starter plugin framework. Designed to reduce setup time while enforcing consistent architecture, coding standards, and best practices for serious plugin development."
+          data-role="Sole Developer" data-tech="WordPress, PHP, OOP, Composer"
+          data-link="https://github.com/Rodgath/n00b-Plugin" data-link-text="View on GitHub" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">n00b Plugin</span> -->
+            <img src="images/default.png" alt="n00b Plugin" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              n00b Plugin</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">WordPress Starter Plugin Framework</p>
+          </div>
+        </article>
+
+        <!-- n00b Theme -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress" data-title="n00b Theme"
+          data-desc="Modern WordPress starter theme built for rapid, standards-compliant development. Provides a clean foundation with sensible defaults and a structure that encourages maintainable theme code."
+          data-role="Sole Developer" data-tech="WordPress, PHP, HTML5, CSS3/SCSS, JavaScript"
+          data-link="https://github.com/Rodgath/n00b" data-link-text="View on GitHub" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">n00b Theme</span> -->
+            <img src="images/default.png" alt="n00b Theme" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              n00b Theme</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">WordPress Starter Theme</p>
+          </div>
+        </article>
+
+        <!-- G-Access -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress commercial" data-title="G-Access"
+          data-desc="Commercial WordPress authentication plugin enabling secure Google Login and Signup using Google OAuth and Google One Tap. Simplifies user onboarding while integrating seamlessly with native WordPress authentication. Sold on CodeDilaz."
+          data-role="Sole Architect & Developer"
+          data-tech="WordPress, PHP, JavaScript, Google OAuth, Google Identity Services" data-link="#"
+          data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">G-Access</span> -->
+            <img src="images/default.png" alt="G-Access" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              G-Access</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Google Auth Plugin • CodeDilaz</p>
+          </div>
+        </article>
+
+        <!-- CarMart -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="commercial" data-title="CarMart"
+          data-desc="Modern automotive directory and dealership solution available as both a Bootstrap 5 template and a full WordPress theme. Includes vehicle listings, dealer dashboards, advanced search, and complete frontend architecture. Published on WrapBootstrap."
+          data-role="Sole Designer & Developer" data-tech="Bootstrap 5, WordPress, PHP, SCSS, JavaScript, HTML5"
+          data-link="https://wrapmarket.com/item/carmart-automotive-directory-dealership-bootstrap-template-WB0HX0C64"
+          data-link-text="View on WrapBootstrap" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">CarMart</span> -->
+            <img src="images/default.png" alt="CarMart" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              CarMart</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Automotive Bootstrap + WordPress Theme</p>
+          </div>
+        </article>
+
+        <!-- AutoIO -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="commercial" data-title="AutoIO"
+          data-desc="Responsive frontend template for automotive directories and classified listing platforms. Includes vehicle listing interfaces, dealer dashboards, search/filtering, and modular page templates. Published on WrapBootstrap."
+          data-role="Sole Designer & Developer" data-tech="HTML5, Bootstrap, SCSS, JavaScript"
+          data-link="https://wrapmarket.com/item/autoio-cars-listings-directory-template-WB0626NG6"
+          data-link-text="View on WrapBootstrap" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">AutoIO</span> -->
+            <img src="images/default.png" alt="AutoIO" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              AutoIO</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Cars Listings & Directory Template</p>
+          </div>
+        </article>
+
+        <!-- MasterDev -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="commercial" data-title="MasterDev"
+          data-desc="Modern developer portfolio template built with Astro, Sass, and Tailwind-inspired utility classes. High-performance, SEO-friendly, with dark mode support and reusable components. Published on WrapBootstrap."
+          data-role="Sole Designer & Developer" data-tech="Astro, TypeScript, Sass/SCSS, JavaScript, HTML5"
+          data-link="https://wrapmarket.com/item/masterdev-developer-portfolio-astro-template-sass-tailwind-utilities-WB06C0798"
+          data-link-text="View on WrapBootstrap" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">MasterDev</span> -->
+            <img src="images/default.png" alt="MasterDev" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              MasterDev</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Developer Portfolio • Astro Template</p>
+          </div>
+        </article>
+
+        <!-- Judo Spin -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="javascript" data-title="Judo Spin"
+          data-desc="360° JavaScript image spinner built with pure JavaScript. Supports touch and mouse events and uses CSS transforms for smooth rotation. Published as an npm package."
+          data-role="Sole Developer" data-tech="JavaScript, CSS Transforms, Touch Events, npm"
+          data-link="https://github.com/Rodgath/judo-spin" data-link-text="View on GitHub" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">Judo Spin</span> -->
+            <img src="images/default.png" alt="Judo Spin" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Judo Spin</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">360° Image Spinner • npm</p>
+          </div>
+        </article>
+
+        <!-- Fly-To -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="javascript" data-title="Fly-To"
+          data-desc="Reusable JavaScript animation library that animates a DOM element flying from one container to another. Lightweight and easy to integrate. Published as an npm package."
+          data-role="Sole Developer" data-tech="JavaScript, DOM, CSS Animations, npm"
+          data-link="https://github.com/Rodgath/fly-to" data-link-text="View on GitHub" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">Fly-To</span> -->
+            <img src="images/default.png" alt="Fly-To" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Fly-To</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">DOM Animation Library • npm</p>
+          </div>
+        </article>
+
+        <!-- Simba Scroll -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="javascript" data-title="Simba Scroll"
+          data-desc="Infinite scrolling JavaScript grid library. Provides a performant way to render large sets of items with continuous loading as the user scrolls. Published as an npm package."
+          data-role="Sole Developer" data-tech="JavaScript, DOM, npm" data-link="https://github.com/Rodgath/simba-grid"
+          data-link-text="View on GitHub" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">Simba Scroll</span> -->
+            <img src="images/default.png" alt="Simba Scroll" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Simba Scroll</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Infinite Scrolling Grid • npm</p>
+          </div>
+        </article>
+
+        <!-- TweetCopy -->
+        <article
+          class="portfolio-item group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="javascript" data-title="TweetCopy"
+          data-desc="Firefox browser extension that allows users to copy tweet text directly to the clipboard with a single click. Improves productivity for users who frequently quote or reuse tweet content."
+          data-role="Sole Developer" data-tech="JavaScript, Firefox Add-ons, WebExtensions API"
+          data-link="https://addons.mozilla.org/en-US/firefox/addon/tweet-copy/" data-link-text="View Firefox Add-on"
+          data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <!-- <span class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide">TweetCopy</span> -->
+            <img src="images/default.png" alt="Tweet Copy" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              TweetCopy</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Firefox Browser Extension</p>
+          </div>
+        </article>
+
+        <!-- Naivas Supermarket -->
+        <article
+          class="portfolio-item wordpress commercial group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress commercial" data-title="Naivas Supermarket"
+          data-desc="Full platform migration of the Naivas Supermarket website from Magento to OpenCart and WordPress (Mar 2011 – Dec 2015). Delivered catalog, commerce, and content systems for a major Kenyan retail chain as Web Developer."
+          data-role="Web Developer" data-tech="Magento, OpenCart, WordPress, PHP, MySQL, eCommerce Migration"
+          data-link="#" data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <img src="images/default.png" alt="Naivas Supermarket" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Naivas Supermarket</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Magento → OpenCart / WordPress Migration</p>
+          </div>
+        </article>
+
+        <!-- ShopNPick -->
+        <article
+          class="portfolio-item wordpress commercial group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress commercial" data-title="ShopNPick"
+          data-desc="Complete WordPress Multisite implementation for a Kenyan supermarket and departmental store chain (Jun 2015 – Feb 2016). Built a custom Google Maps API plugin to calculate the nearest store from user geolocation. Users could shop and select delivery location directly from the integrated map interface."
+          data-role="Web Developer"
+          data-tech="WordPress Multisite, PHP, Google Maps API, JavaScript, MySQL, Geolocation" data-link="#"
+          data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <img src="images/default.png" alt="ShopNPick" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              ShopNPick</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">WordPress Multisite • Store Locator & Delivery</p>
+          </div>
+        </article>
+
+        <!-- Obablo Store -->
+        <article
+          class="portfolio-item commercial group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="commercial" data-title="Obablo Store"
+          data-desc="OpenCart store for digital products and physical goods (2011 – 2014). Full store setup covering catalog, checkout, and product delivery workflows."
+          data-role="Web Developer" data-tech="OpenCart, PHP, MySQL, eCommerce" data-link="#"
+          data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <img src="images/default.png" alt="Obablo Store" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Obablo Store</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">OpenCart • Digital & Physical Goods</p>
+          </div>
+        </article>
+
+        <!-- Delight Africa -->
+        <article
+          class="portfolio-item wordpress commercial group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress commercial" data-title="Delight Africa"
+          data-desc="WordPress corporate website for Delight Africa (2013 – Dec 2014). Custom theme and content structure for a professional business presence."
+          data-role="Web Developer" data-tech="WordPress, PHP, HTML5, CSS3, MySQL" data-link="#"
+          data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <img src="images/default.png" alt="Delight Africa" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Delight Africa</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">WordPress Corporate Website</p>
+          </div>
+        </article>
+
+        <!-- Website Merit -->
+        <article
+          class="portfolio-item commercial group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="commercial" data-title="Website Merit"
+          data-desc="Website worth calculator product and related tools (2011 – 2014). Built and operated as owner and web developer."
+          data-role="Owner & Web Developer" data-tech="PHP, MySQL, JavaScript, HTML5, CSS3" data-link="#"
+          data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <img src="images/default.png" alt="Website Merit" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Website Merit</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Website Worth Calculator</p>
+          </div>
+        </article>
+
+        <!-- Envato WordPress Themes (Historical) -->
+        <article
+          class="portfolio-item wordpress commercial group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress commercial" data-title="Envato WordPress Themes"
+          data-desc="Commercial WordPress themes sold on ThemeForest / Envato before 2018: Logic and Jubilant (multipurpose), QuickMag and Newz (news magazine), and Adept (one-page). Full theme architecture, design, and marketplace release."
+          data-role="Sole Designer & Developer" data-tech="WordPress, PHP, HTML5, CSS3, JavaScript, ThemeForest"
+          data-link="#" data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <img src="images/default.png" alt="Envato WordPress Themes" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Envato WordPress Themes</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Logic • Jubilant • QuickMag • Newz • Adept</p>
+          </div>
+        </article>
+
+        <!-- Envato WordPress Plugins (Historical) -->
+        <article
+          class="portfolio-item wordpress commercial group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="wordpress commercial" data-title="Envato WordPress Plugins"
+          data-desc="Commercial WordPress plugins released before 2018: Logic Shortcodes (TinyMCE shortcodes framework, 2013–2016), Merit Speedy and Brooke (coming soon), Logan Ads (banner/text ads with PayPal), Lola Testimonials (carousels and shortcode builder), and Robin Logo (logo carousel)."
+          data-role="Sole Developer" data-tech="WordPress, PHP, JavaScript, TinyMCE, PayPal API" data-link="#"
+          data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <img src="images/default.png" alt="Envato WordPress Plugins" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              Envato WordPress Plugins</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Shortcodes • Ads • Testimonials • Coming Soon</p>
+          </div>
+        </article>
+
+        <!-- OpenCart Templates (Envato) -->
+        <article
+          class="portfolio-item commercial group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="commercial" data-title="OpenCart Templates (Envato)"
+          data-desc="Commercial OpenCart store templates sold on ThemeForest / Envato: Avant, Bridal, Crescent, eCart, Fashopper, MyShop, Selling, and Shoppa. Full storefront design and theme development for eCommerce merchants."
+          data-role="Sole Designer & Developer" data-tech="OpenCart, PHP, HTML5, CSS3, JavaScript, ThemeForest"
+          data-link="#" data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <img src="images/default.png" alt="OpenCart Templates" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              OpenCart Templates</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Envato • 8 Storefront Themes</p>
+          </div>
+        </article>
+
+        <!-- PHPFox Plugins -->
+        <article
+          class="portfolio-item commercial group cursor-pointer bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm hover:shadow-lg dark:hover:shadow-none dark:hover:border-gray-600"
+          data-category="commercial" data-title="PHPFox Plugins"
+          data-desc="Commercial PHPFox marketplace plugins released before 2017: Knowledge Base, SMS (Twilio API integration), and Resume. Built for the PHPFox social networking platform marketplace."
+          data-role="Sole Developer" data-tech="PHPFox, PHP, MySQL, Twilio API" data-link="#"
+          data-link-text="View Project" data-image="">
+          <div
+            class="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 flex items-center justify-center rounded-md overflow-hidden">
+            <img src="images/default.png" alt="PHPFox Plugins" srcset="">
+          </div>
+          <div class="p-5">
+            <h3
+              class="font-semibold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+              PHPFox Plugins</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Knowledge Base • SMS • Resume</p>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 dark:border-gray-800 mt-auto">
+      <div
+        class="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-sm text-gray-500 dark:text-gray-400 flex flex-col sm:flex-row justify-between gap-2">
+        <p>&copy; <span id="year"></span> Rodgath</p>
+        <p>Tatu City, Kenya · <a href="https://github.com/Rodgath"
+            class="hover:text-gray-900 dark:hover:text-white transition-colors duration-200">github.com/Rodgath</a></p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6" role="dialog"
+      aria-modal="true" aria-labelledby="modal-title">
+      <!-- Backdrop -->
+      <div id="modal-backdrop" class="absolute inset-0 bg-black/60 dark:bg-black/70 backdrop-blur-sm"></div>
+
+      <!-- Modal panel -->
+      <div id="modal-panel"
+        class="relative bg-white dark:bg-gray-900 rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] overflow-hidden flex flex-col md:flex-row">
+
+        <!-- Close button -->
+        <button id="modal-close" type="button" aria-label="Close"
+          class="absolute top-3 right-3 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-white/90 dark:bg-gray-800/90 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        <!-- Image (top on mobile, left on desktop) -->
+        <div id="modal-image-wrap"
+          class="w-full md:w-5/12 flex-shrink-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-850 aspect-[16/10] md:aspect-auto md:min-h-[320px] flex items-center justify-center">
+          <!-- <span id="modal-image-placeholder"
+            class="text-gray-400 dark:text-gray-500 text-sm font-medium tracking-wide"></span> -->
+          <!-- When you have real images, replace the span with: -->
+          <img id="modal-image" src="images/default.png" alt="" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 overflow-y-auto p-6 sm:p-8">
+          <h3 id="modal-title" class="text-2xl font-bold tracking-tight mb-1 pr-8"></h3>
+          <p id="modal-role" class="text-sm text-gray-500 dark:text-gray-400 mb-4"></p>
+          <p id="modal-desc" class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"></p>
+
+          <div class="mb-6">
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">
+              Technologies
+            </h4>
+            <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+          </div>
+
+          <a id="modal-link" href="#" target="_blank" rel="noopener"
+            class="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-sm font-medium rounded-lg hover:bg-gray-800 dark:hover:bg-white transition-colors duration-200">
+            <span id="modal-link-text">View Project</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+
+</html>
