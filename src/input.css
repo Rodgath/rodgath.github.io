@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@source "./*.{html,js}";
+@source "./portfolio.html";
+@source "./index.html";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* font-sans → font-sans utility / default sans stack */
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* ease-out-expo → transition-timing-function / ease-out-expo */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Smooth theme transition */
+html {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+body,
+header,
+footer {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+body,
+header,
+footer,
+.portfolio-item,
+.filter-btn,
+#modal-panel {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Portfolio item transitions (Isotope-like) */
+#portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin: 0; /* remove negative margin if you have it */
+}
+
+@media (min-width: 640px) {
+  #portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  #portfolio-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.portfolio-item {
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  transition:
+    opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s ease;
+  will-change: opacity, transform;
+}
+
+
+.portfolio-item.is-hidden {
+  opacity: 0;
+  transform: scale(0.92);
+  pointer-events: none;
+  position: absolute;
+  visibility: hidden;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-4px);
+}
+
+.portfolio-item.is-hidden:hover {
+  transform: scale(0.92);
+}
+
+/* Filter buttons */
+.filter-btn {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.filter-btn.active {
+  background-color: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+
+.dark .filter-btn.active {
+  background-color: #f3f4f6;
+  color: #111827;
+  border-color: #f3f4f6;
+}
+
+/* Modal animations */
+#modal {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0.3s;
+}
+
+#modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+#modal-backdrop {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#modal.is-open #modal-backdrop {
+  opacity: 1;
+}
+
+#modal-panel {
+  opacity: 0;
+  transform: scale(0.95) translateY(12px);
+  transition:
+    opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#modal.is-open #modal-panel {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}

@@ -1,10 +1,163 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rodgath</title>
-</head>
-<body>
-  <strong>Hey, Milky</strong>
-</body>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rodgath - Full Stack & Platform Engineer</title>
+    <meta name="description"
+      content="Rodgath - Full Stack & Platform Engineer. 17+ years building commercial WordPress products, Go platforms, and production systems." />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100 antialiased min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header id="site-header"
+      class="border-b border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm sticky top-0 z-40 transition-transform duration-300 ease-out">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3">
+        <div class="min-w-0">
+          <a href="index.html"
+            class="text-lg sm:text-xl font-bold tracking-tight hover:opacity-80 transition-opacity truncate block">Rodgath</a>
+          <p class="text-gray-500 dark:text-gray-400 text-xs sm:text-sm truncate hidden xs:block sm:block">Full Stack &
+            Platform Engineer</p>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3 text-sm flex-shrink-0">
+          <!-- Text links (optional, can keep or remove) -->
+          <a href="portfolio.html"
+            class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 hidden sm:inline">Portfolio</a>
+          <a href="#"
+            class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 hidden sm:inline">Resume</a>
+
+          <!-- Social icons -->
+          <a href="https://github.com/Rodgath" target="_blank" rel="noopener" aria-label="GitHub"
+            class="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/rodgath" target="_blank" rel="noopener" aria-label="LinkedIn"
+            class="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 11v5" />
+              <path d="M8 8v.01" />
+              <path d="M12 16v-5" />
+              <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+              <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" />
+            </svg>
+          </a>
+
+          <a href="https://x.com/rodgath" target="_blank" rel="noopener" aria-label="X (Twitter)"
+            class="p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 4l11.733 16h4.267l-11.733 -16l-4.267 0" />
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+            </svg>
+          </a>
+
+
+          <!-- Dark mode toggle -->
+          <button id="theme-toggle" type="button" aria-label="Toggle dark mode"
+            class="p-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+            <svg id="icon-sun" class="hidden dark:block w-4 h-4 sm:w-5 sm:h-5 text-amber-400" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                clip-rule="evenodd" />
+            </svg>
+            <svg id="icon-moon" class="block dark:hidden w-4 h-4 sm:w-5 sm:h-5 text-gray-600" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1 flex items-center">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24 w-full">
+        <div class="flex flex-col lg:flex-row items-center gap-10 md:gap-18 lg:gap-14">
+
+          <!-- Photo -->
+          <div class="flex-shrink-0 lg:self-start">
+            <div
+              class="w-56 h-56 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg">
+              <!-- Replace src with your photo -->
+              <img src="images/profile.png" alt="Rodgath" class="w-full h-full object-cover"
+                onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-500 text-sm font-medium\'>Photo</div>'" />
+            </div>
+          </div>
+
+          <!-- Text content -->
+          <div class="flex-1 text-center lg:text-left">
+            <p class="text-sm font-medium text-blue-600 dark:text-blue-400 mb-5 tracking-wide uppercase">
+              Available for opportunities
+            </p>
+            <h1 class="text-3xl sm:text-4xl lg:text-4xl font-bold tracking-tight mb-6">
+              Peter (Rodgath) Ndirangu
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 font-medium mb-4">
+              Full Stack & Platform Engineer
+            </p>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl mb-8">
+              17+ years building commercial software products and production systems.
+              Specialized in WordPress/PHP ecosystems, Go backends, and platform architecture -
+              including a full migration of a multi-tenant marketplace from WordPress Multisite to native Go.
+            </p>
+
+            <!-- Buttons -->
+            <div
+              class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3 sm:gap-4">
+              <a href="portfolio.html"
+                class="inline-flex items-center justify-center gap-2 w-full min-[450px]:w-auto px-6 py-3 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-sm font-semibold rounded-lg hover:bg-gray-800 dark:hover:bg-white transition-colors duration-200 shadow-sm">
+                View Portfolio
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+              <a href="https://github.com/Rodgath" target="_blank" rel="noopener"
+                class="inline-flex items-center justify-center gap-2 w-full min-[450px]:w-auto px-6 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-sm font-semibold rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">
+                GitHub
+              </a>
+              <a href="#"
+                class="inline-flex items-center justify-center gap-2 w-full min-[450px]:w-auto px-6 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 text-sm font-semibold rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">
+                Resume (PDF)
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 dark:border-gray-800 mt-auto">
+      <div
+        class="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-sm text-gray-500 dark:text-gray-400 flex flex-col sm:flex-row justify-between gap-2">
+        <p>&copy; <span id="year"></span> Rodgath</p>
+        <p>Tatu City, Kenya · <a href="https://github.com/Rodgath"
+            class="hover:text-gray-900 dark:hover:text-white transition-colors duration-200">github.com/Rodgath</a></p>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+
 </html>
