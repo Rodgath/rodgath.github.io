@@ -133,6 +133,20 @@
       modalDesc.textContent = item.dataset.desc;
       // modalImagePlaceholder.textContent = item.dataset.title;
 
+      // Image
+      const imgLink = item.dataset.image;
+      const imgPosition = item.dataset.imagePos || 'object-top';
+      if (imgLink && imgLink !== "#") {
+        modalImage.src = imgLink;
+        modalImage.classList.remove("!hidden");
+        modalImage.classList.add(imgPosition);
+        modalImagePlaceholder.classList.add("!hidden");
+      } else {
+        modalImage.classList.add("!hidden");
+        modalImagePlaceholder.classList.remove("!hidden");
+        modalImagePlaceholder.textContent = item.dataset.title;
+      }
+
       // Tech tags
       modalTech.innerHTML = "";
       item.dataset.tech.split(",").forEach((tech) => {
