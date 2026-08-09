@@ -146,10 +146,10 @@
       const link = item.dataset.link;
       if (link && link !== "#") {
         modalLink.href = link;
-        modalLink.classList.remove("hidden");
+        modalLink.classList.remove("!hidden");
         modalLinkText.textContent = item.dataset.linkText || "View Project";
       } else {
-        modalLink.classList.add("hidden");
+        modalLink.classList.add("!hidden");
       }
 
       modal.classList.add("is-open");

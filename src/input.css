@@ -4,6 +4,9 @@
 @source "./portfolio.html";
 @source "./index.html";
 
+/* Force classes used only via JS into the build */
+@source inline("!hidden");
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
