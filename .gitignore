@@ -1,4 +1,15 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Environment variables
 .env
-/dist
+.env.*
+
+# Build output
+dist/
+
+# Design files
 *.sketch
+
+# Logs
+npm-debug.log*
