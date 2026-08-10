@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-@source "../*.{html,js}";
+@source "../*.{html}";
 @source "../js/*.js";
-@source "../index.html";
-@source "../portfolio.html";
 
 /* Force classes used only via JS into the build */
 @source inline("!hidden");
