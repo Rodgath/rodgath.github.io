@@ -9,7 +9,8 @@
     "copy:html": "shx cp src/index.html src/portfolio.html dist/",
     "copy:assets": "shx cp -r src/images src/js dist/",
     "clean": "shx rm -rf dist && shx mkdir -p dist/css",
-    "build": "npm run clean && npm run build:css && npm run copy:html && npm run copy:assets"
+    "watch": "gulp watch",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
   "homepage": "https://github.com/rodgath/rodgath.github.io#readme",
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
+    "gulp": "^5.0.1",
+    "gulp-cli": "^3.1.0",
     "shx": "^0.4.0",
     "tailwindcss": "^4.3.3"
   }
